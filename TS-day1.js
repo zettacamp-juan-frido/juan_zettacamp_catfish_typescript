@@ -1,13 +1,19 @@
 function TS(Learning, num1, num2, check) {
     if (check) {
-        console.log(Learning + " " + num1 + " " + num2);
+        var LS = Learning;
+        var number1 = num1;
+        var number2 = num2;
+        var Typescript = LS + number1 + number2;
+        return Typescript;
     }
     else {
-        return "We use Typescript so check your code again!!!";
+        console.log({
+            "type of argument Learning": typeof Learning,
+            "type of argument Number1": typeof num1,
+            "type of argument Number2": typeof num2
+        });
     }
 }
-var LS = "Learning Typescript is different than Javascript";
-var number1 = 9;
-var number2 = 19;
 var CK = true;
-TS(LS, number1, number2, CK);
+var ts = TS("Learning Typescript is different than Javascript", 9, 19, CK);
+console.log(ts);
